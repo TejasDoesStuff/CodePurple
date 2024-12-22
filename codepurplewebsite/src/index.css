@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-book-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-bold-italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-heavy-italic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-light-italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-medium-italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-semibold-italic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-thin-italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+  
