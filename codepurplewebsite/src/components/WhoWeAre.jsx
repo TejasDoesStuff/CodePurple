@@ -19,17 +19,25 @@ function WhoWeAre() {
             </div>
             <div 
               className="flex items-center"
-              onMouseEnter={() => setNavBoxStuff(<p className="rounded-lg">temp</p>)}
+              onMouseEnter={() => setNavBoxStuff(<p className="rounded-lg">Team 5827 strives to provide equal opportunities in STEM to students of all ages. By introducing FIRST to students, we empower them to become future leaders and productive adults using the core values of Gracious Professionalism. Click to learn more about our team!</p>)}
               onMouseLeave={() => setNavBoxStuff(null)}
             >
               <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
               <span className="ml-4 font-kode text-gray-400 text-4xl hover:text-white transition-all">Mission</span>
             </div>
-            <div className="flex items-center">
+            <div 
+              className="flex items-center"
+              onMouseEnter={() => setNavBoxStuff(<p className="rounded-lg">Ever since our founding in 2016, team 5827 has been a tight-knit group of High School robotics enjoyers working together to produce the best robots we can. Click to learn more about our team's history!</p>)}
+              onMouseLeave={() => setNavBoxStuff(null)}
+            >
               <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
               <span className="ml-4 font-kode text-gray-400 text-4xl hover:text-white transition-all">History</span>
             </div>
-            <div className="flex items-center">
+            <div 
+              className="flex items-center"
+              onMouseEnter={() => setNavBoxStuff(<p className="rounded-lg">In our team, we have many different sub-teams for each component of the robot. We have sub-teams for Computer Assisted Design, Build, Electronics, Finance, Programming, etc. Click to learn more about each of our unique subteams!</p>)}
+              onMouseLeave={() => setNavBoxStuff(null)}
+            >
               <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
               <span className="ml-4 font-kode text-gray-400 text-4xl hover:text-white transition-all">Subteams</span>
             </div>
