@@ -19,6 +19,9 @@ export default {
         bold: 700,
         heavy: 800,
       },
+      colors: {
+        codePurple: "#7E44CE",
+      },
     },
   },
   plugins: [],
