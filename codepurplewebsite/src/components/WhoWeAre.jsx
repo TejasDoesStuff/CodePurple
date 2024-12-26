@@ -35,7 +35,7 @@ function WhoWeAre() {
             </div>
             <div 
               className="flex items-center"
-              onMouseEnter={() => setNavBoxStuff(<p className="rounded-lg">In our team, we have many different sub-teams for each component of the robot. We have sub-teams for Computer Assisted Design, Build, Electronics, Finance, Programming, etc. Click to learn more about each of our unique subteams!</p>)}
+              onMouseEnter={() => setNavBoxStuff(<p className="rounded-lg">In our team, we have many different sub-teams for each component of the robot. Our subteams include: <li>Computer Assisted Design,</li>  Build, Electronics, Finance, Programming, etc. Click to learn more about each of our unique subteams!</p>)}
               onMouseLeave={() => setNavBoxStuff(null)}
             >
               <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
