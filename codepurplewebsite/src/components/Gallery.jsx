@@ -1,8 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import './NoScrollBar.css';
+
+const galleryPhotos = import.meta.glob('../codepurplewebsite/src/assets/galleryPhotos/*.{png,jpg,jpeg,svg}', { eager: true });
 
 function Gallery() {
   const scrollRef = useRef(null);
+  const [photos, setPhotos] = useState([]);
+
+  useEffect(() => {
+    console.log(galleryPhotos)
+    const loadedPhotos = Object.keys(galleryPhotos).map((key) => galleryPhotos[key].default);
+    console.log(loadedPhotos)
+    setPhotos(loadedPhotos);
+  }, []);
+
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
@@ -27,10 +38,11 @@ function Gallery() {
           ref={scrollRef}
           className="flex flex-row gap-4 overflow-x-scroll scroll-smooth scrollbar-hide whitespace-nowrap h-full"
         >
-          {Array.from({ length: 10 }).map((_, index) => (
+          {photos.map((photo, index) => (
             <div
               key={index}
               className="h-[50vh] w-[30vw] bg-gray-300 flex-shrink-0 rounded-lg mx-4"
+              style={{ backgroundImage: `url(${photo})`, backgroundSize: 'cover' }}
             />
           ))}
         </div>
