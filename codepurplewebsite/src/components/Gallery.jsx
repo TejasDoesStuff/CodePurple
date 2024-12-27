@@ -10,6 +10,11 @@ import P24BB3 from '../assets/galleryPhotos/bordieblast-2024/P24BB3.jpg';
 import P24BB4 from '../assets/galleryPhotos/bordieblast-2024/P24BB4.jpg';
 import P24BB5 from '../assets/galleryPhotos/bordieblast-2024/P24BB5.jpg';
 
+//districts 2024 (not using because of image size)
+import P24D1 from '../assets/galleryPhotos/districts-2024/P24D1.png';
+import P24D2 from '../assets/galleryPhotos/districts-2024/P24D2.png';
+
+
 function Gallery() {
   const scrollRef = useRef(null);
 
@@ -18,6 +23,11 @@ function Gallery() {
       const scrollAmount = direction === "left" ? -300 : 300;
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
+  };
+
+  //TODO fill this out with actual gallery page once done
+  const handleRedirect = () => {
+    window.location.href = "/temp";
   };
 
   return (
@@ -44,6 +54,12 @@ function Gallery() {
               className="h-[50vh] w-[30vw] flex-shrink-0 rounded-lg mx-4"
             />
           ))}
+          <div
+            onClick={handleRedirect}
+            className="h-[50vh] w-[30vw] flex-shrink-0 rounded-lg mx-4 bg-gray-300 flex items-center justify-center cursor-pointer"
+          >
+            <span className="text-xl font-bold text-black">Click To View All Pictures</span>
+          </div>
         </div>
 
         <button
