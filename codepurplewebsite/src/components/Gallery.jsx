@@ -1,21 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import './NoScrollBar.css';
 
+// girls gen 2024
+import P24GG2 from '../assets/galleryPhotos/girlsgen-2024/P24GG2.jpg';
+import P24GG5 from '../assets/galleryPhotos/girlsgen-2024/P24GG5.jpg';
 
-
-const galleryPhotos = import.meta.glob('../codepurplewebsite/src/assets/galleryPhotos/*.{png,jpg,jpeg,svg}', { eager: true });
+// bordie 2024
+import P24BB3 from '../assets/galleryPhotos/bordieblast-2024/P24BB3.jpg';
+import P24BB4 from '../assets/galleryPhotos/bordieblast-2024/P24BB4.jpg';
+import P24BB5 from '../assets/galleryPhotos/bordieblast-2024/P24BB5.jpg';
 
 function Gallery() {
   const scrollRef = useRef(null);
-  const [photos, setPhotos] = useState([]);
-
-  useEffect(() => {
-    console.log(galleryPhotos)
-    const loadedPhotos = Object.keys(galleryPhotos).map((key) => galleryPhotos[key].default);
-    console.log(loadedPhotos)
-    setPhotos(loadedPhotos);
-  }, []);
-
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
@@ -40,11 +36,12 @@ function Gallery() {
           ref={scrollRef}
           className="flex flex-row gap-4 overflow-x-scroll scroll-smooth scrollbar-hide whitespace-nowrap h-full"
         >
-          {photos.map((photo, index) => (
-            <div
+          {[P24GG2, P24GG5, P24BB3, P24BB4, P24BB5].map((image, index) => (
+            <img
               key={index}
-              className="h-[50vh] w-[30vw] bg-gray-300 flex-shrink-0 rounded-lg mx-4"
-              style={{ backgroundImage: `url(${photo})`, backgroundSize: 'cover' }}
+              src={image}
+              alt={`Gallery image ${index + 1}`}
+              className="h-[50vh] w-[30vw] flex-shrink-0 rounded-lg mx-4"
             />
           ))}
         </div>
