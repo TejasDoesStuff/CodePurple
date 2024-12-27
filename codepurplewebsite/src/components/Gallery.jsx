@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import './NoScrollBar.css';
 
+
+
 const galleryPhotos = import.meta.glob('../codepurplewebsite/src/assets/galleryPhotos/*.{png,jpg,jpeg,svg}', { eager: true });
 
 function Gallery() {
