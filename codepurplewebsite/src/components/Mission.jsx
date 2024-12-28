@@ -10,10 +10,10 @@ function Mission() {
                 <div className="">
                     <h1 className="font-kode font-bold px-10 py-2 text-center relative z-10 text-5xl text-codePurple">Our Mission</h1>
                     <div className="text-lg border-codePurple border-2 rounded-lg">
-                        <p className="px-10 py-2 text-center relative">Team 5827 strives to provide equitable opportunities in STEM to students of all ages.</p>
-                        <p className="px-10 py-2 text-center relative">By introducing FIRST to students, we raise their experience and caliber in subjects of STEM.</p>
-                        <p className="px-10 py-2 text-center relative">Using the skills they learned by being part of FIRST and our team, we hope that students persue their passions in STEM past high school.</p>
-                        <p className="px-10 py-2 text-center relative">This is all done using the FIRST principles of Gracious Professionalism and providing a safe and welcoming enviornment to all.</p>
+                        <p className="px-10 py-2 text-left relative">Team 5827 strives to provide equitable opportunities in STEM to students of all ages.</p>
+                        <p className="px-10 py-2 text-left relative">By introducing FIRST to students, we raise their experience and caliber in subjects of STEM.</p>
+                        <p className="px-10 py-2 text-left relative">Using the skills they learned by being part of FIRST and our team, we hope that students persue their passions in STEM past high school.</p>
+                        <p className="px-10 py-2 text-left relative">This is all done using the FIRST principles of Gracious Professionalism and providing a safe and welcoming enviornment to all.</p>
                     </div>
                 </div>
             </div>

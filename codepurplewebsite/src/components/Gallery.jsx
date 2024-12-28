@@ -51,7 +51,7 @@ function Gallery() {
               key={index}
               src={image}
               alt={`Gallery image ${index + 1}`}
-              className="h-[50vh] w-[30vw] flex-shrink-0 rounded-lg mx-4"
+              className="h-[50vh] w-[30vw] object-cover flex-shrink-0 rounded-lg mx-4"
             />
           ))}
           <div

@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Unfinished from "./pages/Unfinished";
 import {
     BrowserRouter as Router,
     Routes,
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="*" element={<Unfinished />} />
             </Routes>
             <Footer />
         </Router>
