@@ -13,7 +13,7 @@ function AboutLeadership() {
                         <p className="px-10 py-2 text-left relative">Building a cohesive team and robot would not be possible without the Student Leaders and Mentors who are part of our team.</p>
                         <p className="px-10 py-2 text-left relative">Student Leads are selected by a panel of past leads and mentors in order to bring together all the individual subteams into one larger team.</p>
                         <p className="px-10 py-2 text-left relative">Additionally, we have many mentors (volunteers, parents, etc.) who are as equally interested in Robotics as the students and are integral to the coordination and structure of our team.</p>
-                        <a href="/leadership" className="px-10 py-2 text-center relative z-10 transition duration-300 ease-in-out transform hover:scale-105 hover:text-blue-500">Click Here to Learn About our Leads and Mentors!</a>
+                        <a className="p-4 my-6 border-codePurple border-4 rounded-full text-codePurple hover:bg-codePurple hover:text-white hover:border-white transition-all" href="/subteams">Learn More About Mentors and Leads!</a>
                     </div>
                 </div>
             </div>
