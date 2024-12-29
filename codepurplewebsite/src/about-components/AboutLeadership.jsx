@@ -12,7 +12,7 @@ function AboutLeadership() {
       </div>
       <div className="m-5 h-[50vh] w-[47vw] flex-shrink-0 rounded-lg mx-4 flex flex-col justify-center items-center text-xl relative">
         <div className="">
-          <h1 className="font-kode font-bold m-2 px-10 py-2 text-center relative z-10 text-5xl border-black border-2 text-codePurple">
+          <h1 className="font-kode font-bold m-2 px-10 py-2 text-center relative z-10 text-5xl text-codePurple">
             Leaders and Mentors
           </h1>
           <div className="text-lg border-codePurple border-2 rounded-lg flex flex-col justify-center items-center">
