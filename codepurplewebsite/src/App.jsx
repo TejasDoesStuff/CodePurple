@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Unfinished from "./pages/Unfinished";
+import Subteams from "./pages/Subteams";
+
 import {
     BrowserRouter as Router,
     Routes,
@@ -19,6 +21,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<Unfinished />} />
+                <Route path="/subteams" element={<Subteams />} />
             </Routes>
             <Footer />
         </Router>
