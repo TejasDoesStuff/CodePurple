@@ -38,15 +38,25 @@ function AboutUs() {
         </div>
         <div className="m-5 bg-codePurple h-[50vh] w-[47vw] flex-shrink-0 rounded-lg border-8 border-rgb(164, 66, 221) border-dashed flex flex-col justify-center items-center text-white">
           <p className="px-10 py-2 text-left">
-            Team 5827 <span className="font-bold text-xl hover:bg-white hover:p-1 hover:text-codePurple transition-all duration-500">Code Purple</span> is a high school robotics team from Kirkland,
-            Washington. We compete in a robotics league under an organization
-            called <span className="italic font-bold text-xl hover:bg-white hover:p-1 hover:text-codePurple duration-500 transition-all">FIRST®</span> (For Inspiration and Recognition of Science and
-            Technology) robotics.
+            Team 5827{" "}
+            <span className="font-bold text-xl hover:bg-white hover:p-1 hover:text-codePurple transition-all duration-500">
+              <a href="/home">Code Purple</a>
+            </span>{" "}
+            is a high school robotics team from Kirkland, Washington. We compete
+            in a robotics league under an organization called{" "}
+            <span className="italic font-bold text-xl hover:bg-white hover:p-1 hover:text-codePurple duration-500 transition-all">
+              <a href="https://www.firstinspires.org/robotics/frc" target="_blank" rel="noopener noreferrer">FIRST®</a>
+            </span>{" "}
+            (For Inspiration and Recognition of Science and Technology)
+            robotics.
           </p>
           <p className="px-10 py-2 text-left">
             {" "}
-            Our team is not only made up of students from <span className="font-bold text-xl hover:bg-white hover:p-1 hover:text-codePurple duration-500 transition-all">Lake Washington High
-            School</span>, but includes many eager parents and mentors, and volunteers
+            Our team is not only made up of students from{" "}
+            <span className="font-bold text-xl hover:bg-white hover:p-1 hover:text-codePurple duration-500 transition-all">
+              <a href="http://lwhs.lwsd.org" target="_blank" rel="noopener noreferrer">Lake Washington High School</a>
+            </span>
+            , but includes many eager parents and mentors, and volunteers
             equally as interested in robotics.
           </p>
           <p className="px-10 py-2 text-left">

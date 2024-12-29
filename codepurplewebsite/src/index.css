@@ -167,3 +167,17 @@
         background-position: 0% 50%;
     }
 }
+
+@keyframes textscroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.text-scroll {
+    display: inline-block;
+    animation: textscroll 10s linear infinite;
+}
