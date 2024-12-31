@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import './NoScrollBar.css';
 
+
 // girls gen 2024
 import P24GG2 from '../assets/galleryPhotos/girlsgen-2024/P24GG2.jpg';
 import P24GG5 from '../assets/galleryPhotos/girlsgen-2024/P24GG5.jpg';
