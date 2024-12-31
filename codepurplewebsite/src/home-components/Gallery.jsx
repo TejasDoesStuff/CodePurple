@@ -33,7 +33,7 @@ function Gallery() {
 
   return (
     <div className="h-[80vh] w-full bg-white">
-      <div className="mx-24 my-16">
+      <div className="mx-24 mt-16">
         <div className="relative flex flex-row justify-end items-center gap-10">
           <div className="border-codePurple border-8 rounded-full w-full h-0 absolute left-[-30%]"></div>
           <h1 className="font-kode font-extrabold text-7xl z-10 text-black">
@@ -45,7 +45,7 @@ function Gallery() {
       <div className="relative overflow-hidden h-[60vh] mx-8">
         <div
           ref={scrollRef}
-          className="flex flex-row gap-4 overflow-x-scroll scroll-smooth scrollbar-hide whitespace-nowrap h-full"
+          className="flex flex-row gap-4 overflow-x-scroll scroll-smooth scrollbar-hide whitespace-nowrap h-full items-center"
         >
           {[P24GG2, P24GG5, P24BB3, P24BB4, P24BB5].map((image, index) => (
             <img
@@ -57,9 +57,9 @@ function Gallery() {
           ))}
           <div
             onClick={handleRedirect}
-            className="h-[50vh] w-[30vw] flex-shrink-0 rounded-lg mx-4 bg-gray-300 flex items-center justify-center cursor-pointer"
+            className="h-[50vh] w-[30vw] flex-shrink-0 rounded-lg mx-4 bg-gray-300 flex items-center justify-center cursor-pointer hover:bg-codePurple hover:text-white transition-all duration-300"
           >
-            <span className="text-xl font-bold text-black">Click To View All Pictures</span>
+            <span className="text-xl font-bold ">Click To View All Pictures</span>
           </div>
         </div>
 

@@ -25,7 +25,7 @@ function AboutUs() {
             {" "}
             About Us{" "}
           </h1>
-          <h1 className="text-codePurple text-4xl text-center">5827</h1>
+          <h1 className="text-codePurple text-4xl text-center font-bold">5827</h1>
         </div>
       </div>
 

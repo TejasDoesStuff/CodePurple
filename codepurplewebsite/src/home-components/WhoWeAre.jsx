@@ -1,6 +1,17 @@
 import NavBox from "./NavBox";
 import React, { useState } from "react";
 import RoboticsLocation from "../assets/RoboticsLocation.png";
+import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+
+const containerStyle = {
+  width: "400px",
+  height: "400px",
+};
+
+const center = {
+  lat: -3.745,
+  lng: -38.523,
+};
 
 function WhoWeAre() {
   const [navBoxStuff, setNavBoxStuff] = useState(null);
@@ -20,13 +31,26 @@ function WhoWeAre() {
                   src={RoboticsLocation}
                   alt="location img"
                 />
+                // <div>
+                //   <GoogleMap
+                //     mapContainerStyle={containerStyle}
+                //     center={center}
+                //     zoom={10}
+                //   />
+                // </div>
               )
             }
             onMouseLeave={() => setNavBoxStuff(null)}
           >
             <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
             <span className="ml-4 font-kode text-gray-400 text-4xl hover:text-white transition-all">
-              Location
+              <a
+                href="https://www.google.com/maps/place/LWHS+Robotics+Club/@47.6733505,-122.1842013,17z/data=!3m1!4b1!4m6!3m5!1s0x549013f8a853f775:0x98de18bf1c2c60d3!8m2!3d47.6733469!4d-122.1816264!16s%2Fg%2F11rth9vqf9?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Location
+              </a>
             </span>
           </div>
           <div
@@ -46,7 +70,7 @@ function WhoWeAre() {
           >
             <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
             <span className="ml-4 font-kode text-gray-400 text-4xl hover:text-white transition-all">
-              Mission
+              <a href="/about#mission">Mission</a> {/* make this auto scroll down to mission section? */}
             </span>
           </div>
           <div
@@ -65,7 +89,7 @@ function WhoWeAre() {
           >
             <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
             <span className="ml-4 font-kode text-gray-400 text-4xl hover:text-white transition-all">
-              History
+              <a href="/about#history">History</a> {/* make this auto scroll down to mission section? */}
             </span>
           </div>
           <div
@@ -89,7 +113,7 @@ function WhoWeAre() {
           >
             <div className="border-4 border-white rounded w-24 flex-shrink-0 min-w-[6rem]"></div>
             <span className="ml-4 font-kode text-gray-400 text-4xl hover:text-white transition-all">
-              Subteams
+              <a href="/subteams">Subteams</a>
             </span>
           </div>
         </div>

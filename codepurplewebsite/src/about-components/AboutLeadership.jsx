@@ -1,6 +1,16 @@
 import P24D7 from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
+import Marquee from "react-fast-marquee";
 
 function AboutLeadership() {
+  const scrollText = () => {
+    document.querySelector(".leadershipscroll").classList.add("hidden");
+    document.querySelector(".leadershipmarquee").classList.remove("hidden");
+  };
+
+  const stopScrollText = () => {
+    document.querySelector(".leadershipscroll").classList.remove("hidden");
+    document.querySelector(".leadershipmarquee").classList.add("hidden");
+  };
   return (
     <div className="flex flex-row items-start justify-start w-full py-4">
       <div className="m-10 h-[50vh] w-[47vw] flex-shrink-0 rounded-lg mx-4 flex justify-center items-center relative">
@@ -30,12 +40,23 @@ function AboutLeadership() {
               are as equally interested in Robotics as the students and are
               integral to the coordination and structure of our team.
             </p>
-            <a
-              className="p-4 my-6 border-codePurple border-4 rounded-full text-codePurple hover:bg-codePurple hover:text-white hover:border-white transition-all duration-300 hover:px-16 hover:text-scroll"
-              href="/leadership"
-            >
-              Learn more about our leadership!
-            </a>
+            <div className="w-full h-auto flex justify-center">
+              <a
+                onMouseEnter={scrollText}
+                onMouseLeave={stopScrollText}
+                className="w-96 py-4 my-6 font-bold text-xl border-codePurple border-4 rounded-full text-codePurple hover:bg-codePurple hover:text-white hover:border-white transition-all duration-300 overflow-hidden justify-center items-center flex"
+                href="/subteams"
+              >
+                <p className="leadershipscroll visible">
+                  Learn more about our leadership!
+                </p>
+                <div className="leadershipmarquee hidden w-full">
+                  <Marquee velocity={50} className="" autoFill direction="left">
+                    <p className="mx-2">Leadership</p>
+                  </Marquee>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

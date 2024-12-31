@@ -1,7 +1,7 @@
-import Sponsor from './Sponsor';
+// import Sponsor from './Sponsor';
 import SponsorMarquee from './SponsorMarquee';
-
-function Sponsors({ sponsors = [] }) {
+//{ sponsors = [] }
+function Sponsors() {
   return (
     <div className="h-auto w-full bg-codePurple">
       <div className="mx-24 my-16">
