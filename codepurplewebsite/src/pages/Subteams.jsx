@@ -1,4 +1,4 @@
-import SubteamsTitle from '../components/SubteamsTitle';
+import SubteamsTitle from '../subteam-components/SubteamsTitle';
 
 function Subteams() {
     return (
