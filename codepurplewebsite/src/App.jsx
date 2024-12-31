@@ -1,5 +1,5 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./global-components/Navbar";
+import Footer from "./global-components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Unfinished from "./pages/Unfinished";

@@ -1,8 +1,8 @@
-import TitleScreen from '../components/TitleScreen';
-import Wave from '../components/Wave';
-import WhoWeAre from '../components/WhoWeAre';
-import Gallery from '../components/Gallery';
-import Sponsors from '../components/Sponsors';
+import TitleScreen from '../home-components/TitleScreen';
+import Wave from '../home-components/Wave';
+import WhoWeAre from '../home-components/WhoWeAre';
+import Gallery from '../home-components/Gallery';
+import Sponsors from '../home-components/Sponsors';
 
 import microsoft from '../assets/sponsorLogos/microsoft.png';
 import ospi from '../assets/sponsorLogos/ospi.jpeg';
