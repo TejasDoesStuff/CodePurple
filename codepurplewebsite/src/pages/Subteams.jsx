@@ -1,9 +1,11 @@
-import SubteamsTitle from '../subteam-components/SubteamsTitle';
+import SubteamsTitle from "../subteam-components/SubteamsTitle";
+import SubteamSelector from "../subteam-components/SubteamSelector";
 
 function Subteams() {
-    return (
-        <SubteamsTitle />
-    )
+  return <div className="w-screen flex flex-col items-center">
+      <SubteamsTitle />
+      <SubteamSelector />
+    </div>
 }
 
 export default Subteams;

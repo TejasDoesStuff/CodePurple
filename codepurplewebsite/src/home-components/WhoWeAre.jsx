@@ -61,8 +61,10 @@ function WhoWeAre() {
                   Team 5827 strives to provide equal opportunities in STEM to
                   students of all ages. By introducing FIRST to students, we
                   empower them to become future leaders and productive adults
-                  using the core values of Gracious Professionalism. Click to
-                  learn more about our team!
+                  using the core values of Gracious Professionalism.
+                  <br />
+                  <br />
+                  Click to learn more about our team!
                 </p>
               )
             }
@@ -80,8 +82,10 @@ function WhoWeAre() {
                 <p className="rounded-lg">
                   Ever since our founding in 2016, team 5827 has been a
                   tight-knit group of High School robotics enjoyers working
-                  together to produce the best robots we can. Click to learn
-                  more about our team's history!
+                  together to produce the best robots we can.
+                  <br />
+                  <br />
+                  Click to learn more about our team's history!
                 </p>
               )
             }
@@ -105,6 +109,7 @@ function WhoWeAre() {
                   <li>Finance</li>
                   <li>Programming</li>
                   <li>And more!</li>
+                  <br />
                   Click to learn more about each of our unique subteams!
                 </p>
               )

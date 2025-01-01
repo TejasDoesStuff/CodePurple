@@ -181,3 +181,12 @@
     display: inline-block;
     animation: textscroll 10s linear infinite;
 }
+
+@keyframes float-in {
+    from {transform: translateY(5%); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.floatin {
+    animation: float-in 0.3s ease-out;
+}
