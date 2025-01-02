@@ -21,6 +21,12 @@ export default {
       },
       colors: {
         codePurple: "#7E44CE",
+        code: "#f27100",
+        build: "#D23A3F",
+        design: "#F1E31F",
+        business: "#a7abff",
+        electronics: "#2c6ad0",
+        safety: "#99F11F"
       },
     },
   },

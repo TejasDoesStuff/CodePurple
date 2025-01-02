@@ -37,11 +37,11 @@ function WhoWeAre() {
                 FIRST®
               </a>
             </span>
-            (For Inspiration and Recognition of Science and Technology)
+            {" "}(For Inspiration and Recognition of Science and Technology)
             robotics.
           </p>
           <p className="px-10 py-2 text-left">
-            Our team is not only made up of students from
+            Our team is not only made up of students from {" "}
             <span className="font-bold text-xl hover:bg-white hover:p-1 hover:text-codePurple duration-500 transition-all">
               <a
                 href="http://lwhs.lwsd.org"
