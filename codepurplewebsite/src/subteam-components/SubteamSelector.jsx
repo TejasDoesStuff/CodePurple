@@ -12,7 +12,7 @@ function SubteamSelector() {
       if (!document.querySelector(`.${thing}`).classList.contains("chosen")) {
         document
           .querySelector(`.${thing}`)
-          .classList.add("chosen", "z-10", "scale-[1000%]");
+          .classList.add("chosen", "z-10", "scale-[3000%]");
   
         document
           .querySelector(`.${thing}-text`)
@@ -28,7 +28,7 @@ function SubteamSelector() {
     setShowButton(false);
     const element = document.querySelector(".chosen");
     if (element) {
-      element.classList.remove("chosen", "scale-[1000%]");
+      element.classList.remove("chosen", "scale-[3000%]");
       setTimeout(() => {
         element.classList.remove("z-10");
         document
