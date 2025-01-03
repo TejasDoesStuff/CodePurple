@@ -6,7 +6,6 @@ function Subteams() {
   return <div className="w-screen flex flex-col items-center">
       <SubteamsTitle />
       <SubteamSelector />
-      <BuildScreen />
     </div>
 }
 

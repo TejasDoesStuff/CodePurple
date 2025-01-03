@@ -1,29 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import BuildScreen from './BuildScreen.jsx';
 
 function SubteamSelector() {
   const [showButton, setShowButton] = useState(false);
   const [somethingChosen, setSomethingChosen] = useState(false);
+  const [showBuildScreen, setShowBuildScreen] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
 
   const thechosenone = (thing) => {
-    if(somethingChosen === false) {
+    if (somethingChosen === false) {
       setTimeout(() => {
         setShowButton(true);
-      }, 1000);
+      }, 500);
       if (!document.querySelector(`.${thing}`).classList.contains("chosen")) {
         document
           .querySelector(`.${thing}`)
           .classList.add("chosen", "z-10", "scale-[3000%]");
-  
+
         document
           .querySelector(`.${thing}-text`)
           .classList.add("opacity-0", "chosen-text");
       }
-        setSomethingChosen(true);
-    }
-    else {
-      return;
+      setSomethingChosen(true);
+
+      if (thing === "build") setShowBuildScreen(true);
+      else return;
     }
   };
+
   const notthechosenone = () => {
     setShowButton(false);
     const element = document.querySelector(".chosen");
@@ -37,7 +41,12 @@ function SubteamSelector() {
         document.querySelector(`.chosen-text`).classList.add("opacity-100");
       }, 1000);
     }
-    setTimeout(() => { setSomethingChosen(false); }, 1100);
+    setFadeOut(true);
+    setTimeout(() => {
+      setSomethingChosen(false);
+      setShowBuildScreen(false);
+      setFadeOut(false);
+    }, 1000);
   };
 
   return (
@@ -95,9 +104,14 @@ function SubteamSelector() {
       {showButton && (
         <div
           onMouseDown={() => notthechosenone()}
-          className="close absolute mx-8 my-8 z-20 right-0 top-0 p-4 bg-codePurple text-white rounded-full drop-shadow-2xl"
+          className="close absolute mx-8 my-8 z-40 right-0 top-0 p-4 bg-codePurple text-white rounded-full drop-shadow-2xl fade-in show"
         >
           Close
+        </div>
+      )}
+      {showBuildScreen && (
+        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+          <BuildScreen />
         </div>
       )}
     </div>
