@@ -1,11 +1,22 @@
 import { useState, useEffect } from "react";
 import BuildScreen from './BuildScreen.jsx';
+import CodeScreen from './CodeScreen.jsx';
+import DesignScreen from './DesignScreen.jsx';
+import SafetyScreen from './SafetyScreen.jsx';
+import ElectronicsScreen from "./ElectronicsScreen.jsx";
+import BusinessScreen from "./BusinessScreen.jsx";
 
 function SubteamSelector() {
   const [showButton, setShowButton] = useState(false);
   const [somethingChosen, setSomethingChosen] = useState(false);
-  const [showBuildScreen, setShowBuildScreen] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
+
+  const [showBuildScreen, setShowBuildScreen] = useState(false);
+  const [showCodeScreen, setShowCodeScreen] = useState(false);
+  const [showDesignScreen,setShowDesignScreen] = useState(false);
+  const [showSafetyScreen, setShowSafetyScreen] = useState(false);
+  const [showElectronicsScreen, setShowElectronicsScreen] = useState(false);
+  const [showBusinessScreen, setShowBusinessScreen] = useState(false);
 
   const thechosenone = (thing) => {
     if (somethingChosen === false) {
@@ -24,6 +35,11 @@ function SubteamSelector() {
       setSomethingChosen(true);
 
       if (thing === "build") setShowBuildScreen(true);
+      if (thing === "code") setShowCodeScreen(true);
+      if(thing === "design") setShowDesignScreen(true);
+      if(thing ==='safety') setShowSafetyScreen(true);
+      if(thing === 'electronics') setShowElectronicsScreen(true);
+      if(thing === 'business') setShowBusinessScreen(true);
       else return;
     }
   };
@@ -45,6 +61,11 @@ function SubteamSelector() {
     setTimeout(() => {
       setSomethingChosen(false);
       setShowBuildScreen(false);
+      setShowCodeScreen(false);
+      setShowDesignScreen(false);
+      setShowSafetyScreen(false);
+      setShowElectronicsScreen(false);
+      setShowBusinessScreen(false);
       setFadeOut(false);
     }, 1000);
   };
@@ -112,6 +133,31 @@ function SubteamSelector() {
       {showBuildScreen && (
         <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
           <BuildScreen />
+        </div>
+      )}
+      {showCodeScreen && (
+        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+          <CodeScreen />
+        </div>
+      )}
+      {showDesignScreen && (
+        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+          <DesignScreen />
+        </div>
+      )}
+      {showSafetyScreen && (
+        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+          <SafetyScreen />
+        </div>
+      )}
+      {showElectronicsScreen && (
+        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+          <ElectronicsScreen />
+        </div>
+      )}
+      {showBusinessScreen && (
+        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+          <BusinessScreen />
         </div>
       )}
     </div>
