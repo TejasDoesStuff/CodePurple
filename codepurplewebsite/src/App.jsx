@@ -18,22 +18,22 @@ import {
 
 function App() {
     return (
-    <div className="w-screen flex flex-col items-center overflow-x-hidden">
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/subteams" element={<Subteams />} />
-                <Route path="/leadership" element={<Leadership />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/freddy" element={<Freddy />} />
-                <Route path="*" element={<Unfinished />} />
-            </Routes>
-            <Footer />
-        </Router>
-    </div>
+        <div className="w-screen flex flex-col items-center overflow-x-hidden">
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/subteams" element={<Subteams />} />
+                    <Route path="/leadership" element={<Leadership />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/freddy" element={<Freddy />} />
+                    <Route path="*" element={<Unfinished />} />
+                </Routes>
+                <Footer />
+            </Router>
+        </div>
     );
 }
 
