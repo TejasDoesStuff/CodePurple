@@ -45,7 +45,7 @@ function AboutLeadership() {
                 onMouseEnter={scrollText}
                 onMouseLeave={stopScrollText}
                 className="w-96 py-4 my-6 font-bold text-xl border-codePurple border-4 rounded-full text-codePurple hover:bg-codePurple hover:text-white hover:border-white transition-all duration-300 overflow-hidden justify-center items-center flex"
-                href="/subteams"
+                href="/leadership"
               >
                 <p className="leadershipscroll visible">
                   Learn more about our leadership!

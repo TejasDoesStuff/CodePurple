@@ -1,19 +1,31 @@
 import { useState, useEffect } from "react";
-import BuildScreen from './BuildScreen.jsx';
-import CodeScreen from './CodeScreen.jsx';
-import DesignScreen from './DesignScreen.jsx';
-import SafetyScreen from './SafetyScreen.jsx';
+import BuildScreen from "./BuildScreen.jsx";
+import CodeScreen from "./CodeScreen.jsx";
+import DesignScreen from "./DesignScreen.jsx";
+import SafetyScreen from "./SafetyScreen.jsx";
 import ElectronicsScreen from "./ElectronicsScreen.jsx";
 import BusinessScreen from "./BusinessScreen.jsx";
+import Marquee from "react-fast-marquee";
 
 function SubteamSelector() {
+  const scrollText = () => {
+    document.querySelector(".closescroll").classList.add("hidden");
+    document.querySelector(".closemarquee").classList.remove("hidden");
+  };
+
+  const stopScrollText = () => {
+    document.querySelector(".closescroll").classList.remove("hidden");
+    document.querySelector(".closemarquee").classList.add("hidden");
+  };
+
   const [showButton, setShowButton] = useState(false);
   const [somethingChosen, setSomethingChosen] = useState(false);
+  const [fadeInClose, setFadeInClose] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
 
   const [showBuildScreen, setShowBuildScreen] = useState(false);
   const [showCodeScreen, setShowCodeScreen] = useState(false);
-  const [showDesignScreen,setShowDesignScreen] = useState(false);
+  const [showDesignScreen, setShowDesignScreen] = useState(false);
   const [showSafetyScreen, setShowSafetyScreen] = useState(false);
   const [showElectronicsScreen, setShowElectronicsScreen] = useState(false);
   const [showBusinessScreen, setShowBusinessScreen] = useState(false);
@@ -36,10 +48,10 @@ function SubteamSelector() {
 
       if (thing === "build") setShowBuildScreen(true);
       if (thing === "code") setShowCodeScreen(true);
-      if(thing === "design") setShowDesignScreen(true);
-      if(thing ==='safety') setShowSafetyScreen(true);
-      if(thing === 'electronics') setShowElectronicsScreen(true);
-      if(thing === 'business') setShowBusinessScreen(true);
+      if (thing === "design") setShowDesignScreen(true);
+      if (thing === "safety") setShowSafetyScreen(true);
+      if (thing === "electronics") setShowElectronicsScreen(true);
+      if (thing === "business") setShowBusinessScreen(true);
       else return;
     }
   };
@@ -70,12 +82,22 @@ function SubteamSelector() {
     }, 1000);
   };
 
+  useEffect(() => {
+    if (showButton) {
+      setTimeout(() => {
+        setFadeInClose(true);
+      }, 0);
+    } else {
+      setFadeInClose(false);
+    }
+  }, [showButton]);
+
   return (
     <div className="h-[94vh] w-full flex justify-center items-center bg-white relative overflow-hidden">
       <div className="w-full max-w-5xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid gap-8 p-8">
         <div
           onMouseDown={() => thechosenone("build")}
-          className="build aspect-square h-64 bg-build rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="build cursor-pointer aspect-square h-64 bg-build rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
         >
           <p className="build-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Build
@@ -83,7 +105,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("code")}
-          className="code aspect-square h-64 bg-code rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="code cursor-pointer aspect-square h-64 bg-code rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
         >
           <p className="code-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Code
@@ -91,7 +113,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("design")}
-          className="design aspect-square h-64 bg-design rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="design cursor-pointer aspect-square h-64 bg-design rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
         >
           <p className="design-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Design
@@ -99,7 +121,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("safety")}
-          className="safety aspect-square h-64 bg-safety rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="safety cursor-pointer aspect-square h-64 bg-safety rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
         >
           <p className="safety-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Safety
@@ -107,7 +129,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("electronics")}
-          className="electronics aspect-square h-64 bg-electronics rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="electronics cursor-pointer aspect-square h-64 bg-electronics rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
         >
           <p className="electronics-text text-white font-bold font-kode text-4xl transition-all duration-1000">
             Electronics
@@ -115,7 +137,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("business")}
-          className="business aspect-square h-64 bg-business rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="business cursor-pointer aspect-square h-64 bg-business rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
         >
           <p className="business-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Business
@@ -125,38 +147,73 @@ function SubteamSelector() {
       {showButton && (
         <div
           onMouseDown={() => notthechosenone()}
-          className="close absolute mx-8 my-8 z-40 right-0 top-0 p-4 bg-codePurple text-white rounded-full drop-shadow-2xl fade-in show"
+          className="{`w-auto h-auto flex z-50 absolute top-0 right-0 px-6 close transition-opacity duration-500 ${fadeInClose ? 'opacity-100' : 'opacity-0'}`}"
         >
-          Close
+          <a
+            onMouseEnter={scrollText}
+            onMouseLeave={stopScrollText}
+            className="w-24 py-4 my-6 font-bold border-white border-4 rounded-full bg-codePurple text-white hover:bg-white hover:text-codePurple hover:border-codePurple transition-all duration-300 overflow-hidden justify-center items-center flex"
+          >
+            <p className="closescroll visible">Close</p>
+            <div className="closemarquee hidden w-full">
+              <Marquee velocity={50} className="" autoFill direction="left">
+                <p className="mx-2">Close</p>
+              </Marquee>
+            </div>
+          </a>
         </div>
       )}
       {showBuildScreen && (
-        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
           <BuildScreen />
         </div>
       )}
       {showCodeScreen && (
-        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
           <CodeScreen />
         </div>
       )}
       {showDesignScreen && (
-        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
           <DesignScreen />
         </div>
       )}
       {showSafetyScreen && (
-        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
           <SafetyScreen />
         </div>
       )}
       {showElectronicsScreen && (
-        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
           <ElectronicsScreen />
         </div>
       )}
       {showBusinessScreen && (
-        <div className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? 'fade-out' : 'floatin'}`}>
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
           <BusinessScreen />
         </div>
       )}

@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Unfinished from "./pages/Unfinished";
 import Subteams from "./pages/Subteams";
+import Contact from "./pages/Contact";
+import Freddy from "./pages/Freddy";
+import Leadership from "./pages/Leadership";
 
 import "./index.css"
 
@@ -23,7 +26,9 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/subteams" element={<Subteams />} />
-
+                <Route path="/leadership" element={<Leadership />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/freddy" element={<Freddy />} />
                 <Route path="*" element={<Unfinished />} />
             </Routes>
             <Footer />
