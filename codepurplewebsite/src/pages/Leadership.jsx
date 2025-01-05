@@ -10,8 +10,8 @@ function Leadership() {
             <LeadershipTitle />
             <Wave />
             <CSuite />
-            <Mentors />
             <Leads />
+            <Mentors />
         </div>
     );
 }

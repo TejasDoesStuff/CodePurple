@@ -7,6 +7,7 @@ import Subteams from "./pages/Subteams";
 import Contact from "./pages/Contact";
 import Freddy from "./pages/Freddy";
 import Leadership from "./pages/Leadership";
+import Sponsors from "./pages/Sponsors";
 
 import "./index.css"
 
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/subteams" element={<Subteams />} />
                 <Route path="/leadership" element={<Leadership />} />
+                <Route path="/sponsors" element={<Sponsors />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/freddy" element={<Freddy />} />
                 <Route path="*" element={<Unfinished />} />

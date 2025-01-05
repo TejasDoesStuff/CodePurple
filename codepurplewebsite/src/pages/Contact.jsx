@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaTiktok, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaEnvelope, FaYoutube } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -15,7 +15,8 @@ function Contact() {
         <form className="w-full p-4 shadow-md">
           <h2 className="text-4xl text-white font-bold mb-6 flex flex-col items-center py-2">
             Get in Touch{" "}
-            <div className="w-48 h-auto bg-codePurple flex justify-around items-center pt-6">
+            <div className="w-56 h-auto bg-codePurple flex justify-around items-center pt-6 gap-2">
+              {/* Tiktok, Youtube, Blue Alliance, -> Link tree */}
               <a
                 href="https://instagram.com/codepurple5827"
                 target="_blank"
@@ -25,7 +26,22 @@ function Contact() {
                 <FaInstagram />
               </a>
               <a
-                href="mailto:your-email@example.com"
+                href="https://www.tiktok.com/@codepurple5827"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-5xl hover:scale-105 transition-all duration-300"
+              >
+                <FaTiktok />
+              </a>
+              <a href="https://www.tiktok.com/@codepurple5827"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-5xl hover:scale-105 transition-all duration-300"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="mailto:frcteam5827@gmail.com"
                 className="text-white text-5xl hover:scale-105 transition-all duration-300"
               >
                 <FaEnvelope />

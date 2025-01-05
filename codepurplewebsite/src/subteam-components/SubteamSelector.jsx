@@ -5,19 +5,9 @@ import DesignScreen from "./DesignScreen.jsx";
 import SafetyScreen from "./SafetyScreen.jsx";
 import ElectronicsScreen from "./ElectronicsScreen.jsx";
 import BusinessScreen from "./BusinessScreen.jsx";
-import Marquee from "react-fast-marquee";
+import { FaTimes } from 'react-icons/fa';
 
 function SubteamSelector() {
-  const scrollText = () => {
-    document.querySelector(".closescroll").classList.add("hidden");
-    document.querySelector(".closemarquee").classList.remove("hidden");
-  };
-
-  const stopScrollText = () => {
-    document.querySelector(".closescroll").classList.remove("hidden");
-    document.querySelector(".closemarquee").classList.add("hidden");
-  };
-
   const [showButton, setShowButton] = useState(false);
   const [somethingChosen, setSomethingChosen] = useState(false);
   const [fadeInClose, setFadeInClose] = useState(false);
@@ -147,19 +137,12 @@ function SubteamSelector() {
       {showButton && (
         <div
           onMouseDown={() => notthechosenone()}
-          className="{`w-auto h-auto flex z-50 absolute top-0 right-0 px-6 close transition-opacity duration-500 ${fadeInClose ? 'opacity-100' : 'opacity-0'}`}"
+          className="{`w-auto h-auto flex z-50 absolute top-[1.2rem] left-0 px-6 close transition-opacity duration-500 ${fadeInClose ? 'opacity-100' : 'opacity-0'}`}"
         >
           <a
-            onMouseEnter={scrollText}
-            onMouseLeave={stopScrollText}
-            className="w-24 py-4 my-6 font-bold border-white border-4 rounded-full bg-codePurple text-white hover:bg-white hover:text-codePurple hover:border-codePurple transition-all duration-300 overflow-hidden justify-center items-center flex"
+            className="w-auto aspect-square py-4 my-6 font-bold border-white border-4 rounded-full text-white hover:bg-white transition-all duration-300 overflow-hidden justify-center items-center flex"
           >
-            <p className="closescroll visible">Close</p>
-            <div className="closemarquee hidden w-full">
-              <Marquee velocity={50} className="" autoFill direction="left">
-                <p className="mx-2">Close</p>
-              </Marquee>
-            </div>
+            <p className="closescroll visible"><FaTimes className="text-2xl" /></p>
           </a>
         </div>
       )}
