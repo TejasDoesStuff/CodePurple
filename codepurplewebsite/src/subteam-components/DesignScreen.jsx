@@ -1,6 +1,7 @@
 import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 import cad from "../assets/subteamPhotos/cad.png";
 import cad2 from "../assets/subteamPhotos/cad2.png";
+import cad3 from "../assets/galleryPhotos/kickoff/IMG_4817.JPG"
 
 function DesignScreen() {
   return (
@@ -26,7 +27,7 @@ function DesignScreen() {
         </div>
         <div className="w-full h-1/2 flex">
           <img src={cad} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-black" />
-          <img src={temp} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-black" />
+          <img src={cad3} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-black" />
         </div>
       </div>
     </div>

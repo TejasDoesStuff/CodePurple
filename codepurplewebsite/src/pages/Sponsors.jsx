@@ -73,7 +73,8 @@ function Sponsors() {
       <div className="h-auto w-full flex justify-center text-left bg-codePurple">
         <div className="w-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid px-8 pb-8 gap-8 max-w-[5000px]">
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://microsoft.com")}
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={Microsoft}
@@ -94,7 +95,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://ospi.k12.wa.us")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={OSPI}
@@ -115,7 +117,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://boeing.com")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={Boeing}
@@ -136,7 +139,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://firstwa.org")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={FIRSTWA}
@@ -157,7 +161,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://modpizza.com")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={Mod}
@@ -178,7 +183,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://www.paccar.com")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={PACCAR}
@@ -199,7 +205,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://qualcomm.com")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={Qualcomm}
@@ -220,7 +227,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://learningthroughplay.com/about-us/the-lego-foundation")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={Lego}
@@ -241,7 +249,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://chipotle.com")} 
+            className="pointer-cursor w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={Chipotle}
@@ -262,7 +271,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://thetreshermanos.com/index.html")}
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={TresHermanos}
@@ -283,7 +293,8 @@ function Sponsors() {
             </div>
           </Tilt>
           <Tilt options={defaultOptions}>
-            <div className="w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
+            <div onClick={() => window.open("https://lwhs.lwsd.org")} 
+            className="cursor-pointer w-64 h-96 bg-white rounded-2xl flex flex-col justify-center items-center shadow-2xl transition-all p-6">
               <div className="h-4/5 w-full flex items-center justify-center">
                 <img
                   src={LWHS}

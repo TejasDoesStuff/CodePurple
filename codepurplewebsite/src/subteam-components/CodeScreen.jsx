@@ -1,4 +1,7 @@
 import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
+import code1 from "../assets/galleryPhotos/kickoff/IMG_4856.JPG";
+import code2 from "../assets/galleryPhotos/kickoff/IMG_4774.JPG";
+import code3 from "../assets/galleryPhotos/kickoff/IMG_4859.JPG";
 
 function CodeScreen() {
   return (
@@ -18,11 +21,11 @@ function CodeScreen() {
       </div>
       <div className="w-1/2 h-screen text-white flex flex-col items-center justify-center">
         <div className="w-full h-1/2">
-          <img src={temp} alt="Large" className="w-full h-full object-cover border-t-0 border-r-0 border-white border-4" />
+          <img src={code1} alt="Large" className="w-full h-full object-cover border-t-0 border-r-0 border-white border-4" />
         </div>
         <div className="w-full h-1/2 flex">
-          <img src={temp} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-white" />
-          <img src={temp} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-white" />
+          <img src={code2} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-white" />
+          <img src={code3} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-white" />
         </div>
       </div>
     </div>

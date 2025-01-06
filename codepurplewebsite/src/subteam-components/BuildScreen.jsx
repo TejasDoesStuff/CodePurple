@@ -1,5 +1,7 @@
 import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 import build from "../assets/subteamPhotos/build.png";
+import build2 from "../assets/galleryPhotos/kickoff/IMG_4808.JPG";
+import build3 from "../assets/galleryPhotos/kickoff/IMG_4864.JPG";
 
 function BuildScreen() {
   return (
@@ -23,8 +25,8 @@ function BuildScreen() {
           <img src={build} alt="Large" className="w-full h-full object-cover border-t-0 border-r-0 border-white border-4" />
         </div>
         <div className="w-full h-1/2 flex">
-          <img src={temp} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-white" />
-          <img src={temp} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-white" />
+          <img src={build2} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-white" />
+          <img src={build3} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-white" />
         </div>
       </div>
     </div>

@@ -140,7 +140,7 @@ function SubteamSelector() {
           className="{`w-auto h-auto flex z-50 absolute top-[1.2rem] left-0 px-6 close transition-opacity duration-500 ${fadeInClose ? 'opacity-100' : 'opacity-0'}`}"
         >
           <a
-            className="w-auto aspect-square py-4 my-6 font-bold border-white border-4 rounded-full text-white hover:bg-white transition-all duration-300 overflow-hidden justify-center items-center flex"
+            className="w-auto aspect-square py-4 my-6 font-bold border-white border-4 rounded-full text-white transition-all duration-300 overflow-hidden justify-center items-center flex hover:rotate-180"
           >
             <p className="closescroll visible"><FaTimes className="text-2xl" /></p>
           </a>

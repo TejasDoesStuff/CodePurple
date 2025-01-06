@@ -1,18 +1,24 @@
 import PersonCard from "./PersonCard";
-import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 
-function CSuite() {
+import Cattin from "../assets/mentors/Cattin.jpg";
+import Gordon from "../assets/mentors/Gordon.jpg";
+import Mike from "../assets/mentors/Mike.jpg";
+import Nathan from "../assets/mentors/Nathan.jpg";
+import Shai from "../assets/mentors/Shai.jpg";
+
+function Mentors() {
     return (
         <div className="w-full h-auto bg-codePurple flex items-center flex-col">
             <h1 className="text-7xl font-kode font-bold my-6 text-white">Mentors</h1>
             <div className="w-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid gap-8 px-8 pb-8 max-w-[5000px]">
-                <PersonCard description={"Description goes here for the role. blah blah blah blah blah blah blah"} />
-                <PersonCard description={"hi"} />
-                <PersonCard description={"hi"} />
-                <PersonCard description={"hi"} />
+                <PersonCard image={Cattin} name={"Mr. Cattin"} title={"Club Director"}description={""} />
+                <PersonCard image={Shai} name={"Shai"} title={"Mentor"} description={""} />
+                <PersonCard image={Gordon} name={"Gordon"} title={"Mentor"} description={""} />
+                <PersonCard image={Mike} name={"Mike"} title={"Mentor"} description={""} />
+                <PersonCard image={Nathan} name={"Nathan"} title={"Mentor"} description={""} />
             </div>
         </div>
     );
 }
 
-export default CSuite;
+export default Mentors;
