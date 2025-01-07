@@ -5,6 +5,8 @@ import Gordon from "../assets/mentors/Gordon.jpg";
 import Mike from "../assets/mentors/Mike.jpg";
 import Nathan from "../assets/mentors/Nathan.jpg";
 import Shai from "../assets/mentors/Shai.jpg";
+import Russ from "../assets/mentors/Russ.jpg";
+import Kris from "../assets/mentors/Kris.jpg";
 
 function Mentors() {
     return (
@@ -16,6 +18,8 @@ function Mentors() {
                 <PersonCard image={Gordon} name={"Gordon"} title={"Mentor"} description={""} />
                 <PersonCard image={Mike} name={"Mike"} title={"Mentor"} description={""} />
                 <PersonCard image={Nathan} name={"Nathan"} title={"Mentor"} description={""} />
+                <PersonCard image={Russ} name={"Russ"} title={"Mentor"} description={""} />
+                <PersonCard image={Kris} name={"Kris"} title={"Mentor"} description={""} />
             </div>
         </div>
     );
