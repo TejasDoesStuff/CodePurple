@@ -19,7 +19,7 @@ function Mentors() {
                 <PersonCard image={Mike} name={"Mike"} title={"Mentor"} description={""} />
                 <PersonCard image={Nathan} name={"Nathan"} title={"Mentor"} description={""} />
                 <PersonCard image={Russ} name={"Russ"} title={"Mentor"} description={""} />
-                <PersonCard image={Kris} name={"Kris"} title={"Mentor"} description={""} />
+                <PersonCard image={Kris} name={"Kris"} title={"Code Team Mentor"} description={""} />
             </div>
         </div>
     );
