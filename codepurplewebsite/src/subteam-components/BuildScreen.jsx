@@ -1,6 +1,6 @@
 import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 import build from "../assets/subteamPhotos/build.png";
-import build2 from "../assets/galleryPhotos/kickoff/IMG_4808.JPG";
+import build2 from "../assets/galleryPhotos/kickoff/IMG_4797.JPG";
 import build3 from "../assets/galleryPhotos/kickoff/IMG_4864.JPG";
 
 function BuildScreen() {
