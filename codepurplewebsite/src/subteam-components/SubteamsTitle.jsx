@@ -1,4 +1,4 @@
-import subteams from "../assets/subteamPhotos/subteams.png"
+import subteams from "../assets/subteamPhotos/subteams.png";
 
 function SubteamsTitle() {
   return (

@@ -5,12 +5,12 @@ import electronics2 from "../assets/subteamPhotos/electronics2.png";
 
 function ElectronicsScreen() {
   return (
-    <div className="w-full h-screen bg-electronics flex flex-row items-center justify-center">
-      <div className="w-1/2 h-screen text-white flex flex-col items-start">
+    <div className="w-full h-full bg-electronics flex flex-row items-center justify-center">
+      <div className="w-1/2 h-full text-white flex flex-col items-start">
         <div className="w-full h-1/4 flex items-center justify-center">
           <h1 className="text-6xl font-bold text-center font-kode m-10"><u>Electronics Team</u></h1>
         </div>
-        <div className="w-full h-1/2 flex flex-col m-2 px-10">
+        <div className="w-full h-1/2 flex flex-col m-2 px-10 justify-center">
           <p className="text-lg text-left m-3">The Electronics team is responsible for all the wiring in the robot. Wiring the robot can be a stressful and time-inducing task, so new electronic team members are trained with hands-on wiring projects in the pre-season.</p>
           <p className="text-lg text-left m-3">As soon as the build team is done with the main chasis and structure of the robot, the electronics team takes over, placing all the electronic components in their respective slots and wiring them all together.</p>
           <p className="text-lg text-left m-3">During the competition, the electronics team is hard at work making sure that none of the wires got knocked out of place in-between matches. One misplaced wire and the robot could fail, so making sure that the cicuits are all properly looped is a crucial part which electronics team plays during competitions.</p>

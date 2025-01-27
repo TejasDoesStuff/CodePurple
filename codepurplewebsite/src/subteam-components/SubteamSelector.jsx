@@ -4,7 +4,10 @@ import CodeScreen from "./CodeScreen.jsx";
 import DesignScreen from "./DesignScreen.jsx";
 import SafetyScreen from "./SafetyScreen.jsx";
 import ElectronicsScreen from "./ElectronicsScreen.jsx";
-import BusinessScreen from "./BusinessScreen.jsx";
+import DriveScreen from "./DriveScreen.jsx";
+import FinanceScreen from "./FinanceScreen.jsx";
+import OutreachScreen from "./OutreachScreen.jsx";
+import MarketingScreen from "./MarketingScreen.jsx";
 import { FaTimes } from 'react-icons/fa';
 
 function SubteamSelector() {
@@ -18,7 +21,11 @@ function SubteamSelector() {
   const [showDesignScreen, setShowDesignScreen] = useState(false);
   const [showSafetyScreen, setShowSafetyScreen] = useState(false);
   const [showElectronicsScreen, setShowElectronicsScreen] = useState(false);
-  const [showBusinessScreen, setShowBusinessScreen] = useState(false);
+  const [showMarketingScreen, setShowMarketingScreen] = useState(false);
+  const [showDriveScreen, setShowDriveScreen] = useState(false);
+  const [showFinanceScreen, setShowFinanceScreen] = useState(false);
+  const [showOutreachScreen, setShowOutreachScreen] = useState(false);
+  
 
   const thechosenone = (thing) => {
     if (somethingChosen === false) {
@@ -41,7 +48,10 @@ function SubteamSelector() {
       if (thing === "design") setShowDesignScreen(true);
       if (thing === "safety") setShowSafetyScreen(true);
       if (thing === "electronics") setShowElectronicsScreen(true);
-      if (thing === "business") setShowBusinessScreen(true);
+      if (thing === "marketing") setShowMarketingScreen(true);
+      if (thing === "drive") setShowDriveScreen(true);
+      if (thing === "finance") setShowFinanceScreen(true);
+      if (thing === "outreach") setShowOutreachScreen(true);
       else return;
     }
   };
@@ -53,10 +63,10 @@ function SubteamSelector() {
       element.classList.remove("chosen", "scale-[3000%]");
       setTimeout(() => {
         element.classList.remove("z-10");
+        document.querySelector(`.chosen-text`).classList.add("opacity-100");
         document
           .querySelector(`.chosen-text`)
           .classList.remove("opacity-0", "chosen-text");
-        document.querySelector(`.chosen-text`).classList.add("opacity-100");
       }, 1000);
     }
     setFadeOut(true);
@@ -67,7 +77,10 @@ function SubteamSelector() {
       setShowDesignScreen(false);
       setShowSafetyScreen(false);
       setShowElectronicsScreen(false);
-      setShowBusinessScreen(false);
+      setShowMarketingScreen(false);
+      setShowDriveScreen(false);
+      setShowFinanceScreen(false);
+      setShowOutreachScreen(false);
       setFadeOut(false);
     }, 1000);
   };
@@ -83,7 +96,7 @@ function SubteamSelector() {
   }, [showButton]);
 
   return (
-    <div className="h-[94vh] w-full flex justify-center items-center bg-white relative overflow-hidden">
+    <div className="h-auto w-full flex justify-center items-center bg-white relative overflow-hidden">
       <div className="w-full max-w-5xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid gap-8 p-8">
         <div
           onMouseDown={() => thechosenone("build")}
@@ -126,13 +139,39 @@ function SubteamSelector() {
           </p>
         </div>
         <div
-          onMouseDown={() => thechosenone("business")}
-          className="business cursor-pointer aspect-square h-64 bg-business rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          onMouseDown={() => thechosenone("drive")}
+          className="drive cursor-pointer aspect-square h-64 bg-drive rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
         >
-          <p className="business-text text-white font-bold font-kode text-5xl transition-all duration-1000">
-            Business
+          <p className="drive-text text-white font-bold font-kode text-5xl transition-all duration-1000">
+            Drive
           </p>
         </div>
+        <div
+          onMouseDown={() => thechosenone("marketing")}
+          className="marketing cursor-pointer aspect-square h-64 bg-marketing rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+        >
+          <p className="marketing-text text-white font-bold font-kode text-4xl transition-all duration-1000">
+            Marketing
+          </p>
+        </div>
+        <div
+          onMouseDown={() => thechosenone("finance")}
+          className="finance cursor-pointer aspect-square h-64 bg-finance rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+        >
+          <p className="finance-text text-white font-bold font-kode text-5xl transition-all duration-1000">
+            Finance
+          </p>
+        </div>
+        <div
+          onMouseDown={() => thechosenone("outreach")}
+          className="outreach cursor-pointer aspect-square h-64 bg-outreach rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+        >
+          <p className="outreach-text text-white font-bold font-kode text-5xl transition-all duration-1000">
+            Outreach
+          </p>
+        </div>
+        
+        
       </div>
       {showButton && (
         <div
@@ -191,13 +230,40 @@ function SubteamSelector() {
           <ElectronicsScreen />
         </div>
       )}
-      {showBusinessScreen && (
+      {showDriveScreen && (
         <div
           className={`absolute inset-0 z-20 flex justify-center items-center ${
             fadeOut ? "fade-out" : "floatin"
           }`}
         >
-          <BusinessScreen />
+          <DriveScreen />
+        </div>
+      )}
+      {showMarketingScreen && (
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
+          <MarketingScreen />
+        </div>
+      )}
+      {showFinanceScreen && (
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
+          <FinanceScreen />
+        </div>
+      )}
+      {showOutreachScreen && (
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${
+            fadeOut ? "fade-out" : "floatin"
+          }`}
+        >
+          <OutreachScreen />
         </div>
       )}
     </div>
