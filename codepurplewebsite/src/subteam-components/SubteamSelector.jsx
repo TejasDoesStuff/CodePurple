@@ -97,7 +97,7 @@ function SubteamSelector() {
       <div className="w-full max-w-5xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid gap-8 p-8">
         <div
           onMouseDown={() => thechosenone("build")}
-          className="build cursor-pointer aspect-square h-64 bg-build rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="build cursor-pointer aspect-square h-64 bg-build rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="build-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Build
@@ -105,7 +105,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("code")}
-          className="code cursor-pointer aspect-square h-64 bg-code rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="code cursor-pointer aspect-square h-64 bg-code rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="code-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Code
@@ -113,7 +113,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("design")}
-          className="design cursor-pointer aspect-square h-64 bg-design rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="design cursor-pointer aspect-square h-64 bg-design rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="design-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Design
@@ -121,7 +121,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("safety")}
-          className="safety cursor-pointer aspect-square h-64 bg-safety rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="safety cursor-pointer aspect-square h-64 bg-safety rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="safety-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Safety
@@ -129,7 +129,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("electronics")}
-          className="electronics cursor-pointer aspect-square h-64 bg-electronics rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="electronics cursor-pointer aspect-square h-64 bg-electronics rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="electronics-text text-white font-bold font-kode text-4xl transition-all duration-1000">
             Electronics
@@ -137,7 +137,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("drive")}
-          className="drive cursor-pointer aspect-square h-64 bg-drive rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="drive cursor-pointer aspect-square h-64 bg-drive rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="drive-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Drive
@@ -145,7 +145,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("marketing")}
-          className="marketing cursor-pointer aspect-square h-64 bg-marketing rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="marketing cursor-pointer aspect-square h-64 bg-marketing rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="marketing-text text-white font-bold font-kode text-4xl transition-all duration-1000">
             Marketing
@@ -153,7 +153,7 @@ function SubteamSelector() {
         </div>
         <div
           onMouseDown={() => thechosenone("finance")}
-          className="finance cursor-pointer aspect-square h-64 bg-finance rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
+          className="finance cursor-pointer aspect-square h-64 bg-finance rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
         >
           <p className="finance-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Finance
@@ -163,7 +163,7 @@ function SubteamSelector() {
           <img
           src={Logo}
           alt="CodePurple"
-          className="absolute left-[-10px] h-24 rounded-full cursor-pointer hover:scale-110 transition-all duration-300"
+          className="absolute left-[-10px] h-24 rounded-full cursor-pointer hover:scale-110 transition-all duration-1000"
           style={{width: `100%`, height: `100%`}}
           onClick={() => window.location.replace("/home")}
           />
