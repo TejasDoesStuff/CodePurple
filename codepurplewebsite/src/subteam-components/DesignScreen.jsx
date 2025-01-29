@@ -23,11 +23,11 @@ function DesignScreen() {
       </div>
       <div className="w-1/2 h-full text-white flex flex-col items-center justify-center">
         <div className="w-full h-1/2">
-          <img src={cad2} alt="Large" className="w-full h-full object-cover border-t-0 border-r-0 border-black border-4" />
+          <img src={cad2} alt="Large" className="w-full h-full object-cover border-t-0 border-r-0 border-white border-4" />
         </div>
         <div className="w-full h-1/2 flex">
-          <img src={cad} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-black" />
-          <img src={cad3} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-black" />
+          <img src={cad} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-white" />
+          <img src={cad3} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-white" />
         </div>
       </div>
     </div>

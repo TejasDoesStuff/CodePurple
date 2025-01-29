@@ -8,6 +8,7 @@ import Jayden from "../assets/leadership/Jayden.jpg";
 import Rohan from "../assets/leadership/Rohan.jpg";
 import Emi from "../assets/leadership/Emi.jpg";
 import Jerry from "../assets/leadership/Jerry.jpg";
+import Logo from "../assets/5827_logo.jpg";
 
 function Leads() {
     return (
@@ -22,6 +23,7 @@ function Leads() {
                 <PersonCard image={Rohan} name={"Rohan Chilukuri"} title={"Finance Lead"} description={""} variant="codePurple" text="white"/>
                 <PersonCard image={Emi} name={"Emi Elman"} title={"Marketing Lead"} description={""} variant="codePurple" text="white"/>
                 <PersonCard image={Jerry} name={"Jerry Guo"} title={"Drive Lead"} description={""} variant="codePurple" text="white"/>
+                <PersonCard image={Logo} name={"Naythan Saldanha"} title={"Scouting Lead"} description={""} variant="codePurple" text="white"/>
             </div>
         </div>
     );

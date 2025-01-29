@@ -6,7 +6,6 @@ import SafetyScreen from "./SafetyScreen.jsx";
 import ElectronicsScreen from "./ElectronicsScreen.jsx";
 import DriveScreen from "./DriveScreen.jsx";
 import FinanceScreen from "./FinanceScreen.jsx";
-import OutreachScreen from "./OutreachScreen.jsx";
 import MarketingScreen from "./MarketingScreen.jsx";
 import { FaTimes } from 'react-icons/fa';
 
@@ -24,7 +23,6 @@ function SubteamSelector() {
   const [showMarketingScreen, setShowMarketingScreen] = useState(false);
   const [showDriveScreen, setShowDriveScreen] = useState(false);
   const [showFinanceScreen, setShowFinanceScreen] = useState(false);
-  const [showOutreachScreen, setShowOutreachScreen] = useState(false);
   
 
   const thechosenone = (thing) => {
@@ -51,7 +49,6 @@ function SubteamSelector() {
       if (thing === "marketing") setShowMarketingScreen(true);
       if (thing === "drive") setShowDriveScreen(true);
       if (thing === "finance") setShowFinanceScreen(true);
-      if (thing === "outreach") setShowOutreachScreen(true);
       else return;
     }
   };
@@ -80,7 +77,6 @@ function SubteamSelector() {
       setShowMarketingScreen(false);
       setShowDriveScreen(false);
       setShowFinanceScreen(false);
-      setShowOutreachScreen(false);
       setFadeOut(false);
     }, 1000);
   };
@@ -161,17 +157,7 @@ function SubteamSelector() {
           <p className="finance-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Finance
           </p>
-        </div>
-        <div
-          onMouseDown={() => thechosenone("outreach")}
-          className="outreach cursor-pointer aspect-square h-64 bg-outreach rounded-xl drop-shadow-2xl transition-all duration-1000 flex items-center justify-center"
-        >
-          <p className="outreach-text text-white font-bold font-kode text-5xl transition-all duration-1000">
-            Outreach
-          </p>
-        </div>
-        
-        
+        </div>               
       </div>
       {showButton && (
         <div
@@ -255,15 +241,6 @@ function SubteamSelector() {
           }`}
         >
           <FinanceScreen />
-        </div>
-      )}
-      {showOutreachScreen && (
-        <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
-        >
-          <OutreachScreen />
         </div>
       )}
     </div>
