@@ -7,6 +7,7 @@ import ElectronicsScreen from "./ElectronicsScreen.jsx";
 import DriveScreen from "./DriveScreen.jsx";
 import FinanceScreen from "./FinanceScreen.jsx";
 import MarketingScreen from "./MarketingScreen.jsx";
+import Logo from "../assets/5827_logo.jpg";
 import { FaTimes } from 'react-icons/fa';
 
 function SubteamSelector() {
@@ -157,7 +158,16 @@ function SubteamSelector() {
           <p className="finance-text text-white font-bold font-kode text-5xl transition-all duration-1000">
             Finance
           </p>
-        </div>               
+        </div>
+        <div className="h-64 rounded-xl drop-shadow-2xl aspect-square flex items-center justify-center">
+          <img
+          src={Logo}
+          alt="CodePurple"
+          className="absolute left-[-10px] h-24 rounded-full cursor-pointer hover:scale-110 transition-all duration-300"
+          style={{width: `100%`, height: `100%`}}
+          onClick={() => window.location.replace("/home")}
+          />
+        </div>
       </div>
       {showButton && (
         <div
