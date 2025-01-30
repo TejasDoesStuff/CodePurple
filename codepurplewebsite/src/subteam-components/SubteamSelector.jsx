@@ -163,7 +163,7 @@ function SubteamSelector() {
           <img
           src={Logo}
           alt="CodePurple"
-          className="absolute left-[-10px] h-24 rounded-full cursor-pointer hover:scale-110 transition-all duration-300"
+          className="absolute left-[-10px] h-24 rounded-full cursor-pointer hover:scale-105 transition-all duration-300"
           style={{width: `100%`, height: `100%`}}
           onClick={() => window.location.replace("/home")}
           />
