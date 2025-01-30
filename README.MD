@@ -1,7 +1,6 @@
 <p align="center">
  <img src="https://avatars.githubusercontent.com/u/73409308?s=200&v=4" alt="The Documentation Compendium"></a>
 </p>
-<h3 align="center"><a href="https://datboi212github.github.io/WPILibLearning">WPILibLearning 5827</a></h3>
 
 # Code Purple Website
 #### Welcome to the repository for the official website of FRC team 5827 - Code Purple
