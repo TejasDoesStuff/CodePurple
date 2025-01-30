@@ -1,4 +1,3 @@
-import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 import cad from "../assets/subteamPhotos/cad.png";
 import cad2 from "../assets/subteamPhotos/cad2.png";
 import cad3 from "../assets/galleryPhotos/kickoff/IMG_4817.JPG"

@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import './NoScrollBar.css';
 
-
 // girls gen 2024
 import P24GG2 from '../assets/galleryPhotos/girlsgen-2024/P24GG2.jpg';
 import P24GG5 from '../assets/galleryPhotos/girlsgen-2024/P24GG5.jpg';
@@ -10,11 +9,6 @@ import P24GG5 from '../assets/galleryPhotos/girlsgen-2024/P24GG5.jpg';
 import P24BB3 from '../assets/galleryPhotos/bordieblast-2024/P24BB3.jpg';
 import P24BB4 from '../assets/galleryPhotos/bordieblast-2024/P24BB4.jpg';
 import P24BB5 from '../assets/galleryPhotos/bordieblast-2024/P24BB5.jpg';
-
-//districts 2024 (not using because of image size)
-import P24D1 from '../assets/galleryPhotos/districts-2024/P24D1.png';
-import P24D2 from '../assets/galleryPhotos/districts-2024/P24D2.png';
-
 
 function Gallery() {
   const scrollRef = useRef(null);
@@ -26,9 +20,8 @@ function Gallery() {
     }
   };
 
-  //TODO fill this out with actual gallery page once done
   const handleRedirect = () => {
-    window.location.href = "/temp";
+    window.location.href = "/*";
   };
 
   return (

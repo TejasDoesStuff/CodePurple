@@ -10,7 +10,7 @@ function Home() {
         <Wave />
         <WhoWeAre />
         <Gallery />
-        <Sponsors/>
+        <Sponsors />
     </div>;
 }
 

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { FaTimes } from 'react-icons/fa';
+
 import BuildScreen from "./BuildScreen.jsx";
 import CodeScreen from "./CodeScreen.jsx";
 import DesignScreen from "./DesignScreen.jsx";
@@ -7,8 +9,7 @@ import ElectronicsScreen from "./ElectronicsScreen.jsx";
 import DriveScreen from "./DriveScreen.jsx";
 import FinanceScreen from "./FinanceScreen.jsx";
 import MarketingScreen from "./MarketingScreen.jsx";
-import Logo from "../assets/5827_logo.jpg";
-import { FaTimes } from 'react-icons/fa';
+import StrategyScreen from "./StrategyScreen.jsx";
 
 function SubteamSelector() {
   const [showButton, setShowButton] = useState(false);
@@ -24,7 +25,8 @@ function SubteamSelector() {
   const [showMarketingScreen, setShowMarketingScreen] = useState(false);
   const [showDriveScreen, setShowDriveScreen] = useState(false);
   const [showFinanceScreen, setShowFinanceScreen] = useState(false);
-  
+  const [showStrategyScreen, setShowStrategyScreen] = useState(false);
+
 
   const thechosenone = (thing) => {
     if (somethingChosen === false) {
@@ -50,6 +52,7 @@ function SubteamSelector() {
       if (thing === "marketing") setShowMarketingScreen(true);
       if (thing === "drive") setShowDriveScreen(true);
       if (thing === "finance") setShowFinanceScreen(true);
+      if (thing === "strategy") setShowStrategyScreen(true);
       else return;
     }
   };
@@ -78,6 +81,7 @@ function SubteamSelector() {
       setShowMarketingScreen(false);
       setShowDriveScreen(false);
       setShowFinanceScreen(false);
+      setShowStrategyScreen(false);
       setFadeOut(false);
     }, 1000);
   };
@@ -159,15 +163,15 @@ function SubteamSelector() {
             Finance
           </p>
         </div>
-        <div className="h-64 rounded-xl drop-shadow-2xl aspect-square flex items-center justify-center">
-          <img
-          src={Logo}
-          alt="CodePurple"
-          className="absolute left-[-10px] h-24 rounded-full cursor-pointer hover:scale-105 transition-all duration-300"
-          style={{width: `100%`, height: `100%`}}
-          onClick={() => window.location.replace("/home")}
-          />
+        <div
+          onMouseDown={() => thechosenone("strategy")}
+          className="strategy cursor-pointer aspect-square h-64 bg-strategy rounded-xl drop-shadow-2xl hover:scale-110 transition-all duration-1000 flex items-center justify-center"
+        >
+          <p className="strategy-text text-white font-bold font-kode text-5xl transition-all duration-1000">
+            Strategy
+          </p>
         </div>
+
       </div>
       {showButton && (
         <div
@@ -183,74 +187,74 @@ function SubteamSelector() {
       )}
       {showBuildScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <BuildScreen />
         </div>
       )}
       {showCodeScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <CodeScreen />
         </div>
       )}
       {showDesignScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <DesignScreen />
         </div>
       )}
       {showSafetyScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <SafetyScreen />
         </div>
       )}
       {showElectronicsScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <ElectronicsScreen />
         </div>
       )}
       {showDriveScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <DriveScreen />
         </div>
       )}
       {showMarketingScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <MarketingScreen />
         </div>
       )}
       {showFinanceScreen && (
         <div
-          className={`absolute inset-0 z-20 flex justify-center items-center ${
-            fadeOut ? "fade-out" : "floatin"
-          }`}
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
         >
           <FinanceScreen />
+        </div>
+      )}
+      {showStrategyScreen && (
+        <div
+          className={`absolute inset-0 z-20 flex justify-center items-center ${fadeOut ? "fade-out" : "floatin"
+            }`}
+        >
+          <StrategyScreen />
         </div>
       )}
     </div>

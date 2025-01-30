@@ -1,4 +1,5 @@
 import PersonCard from "../leadership-components/PersonCard";
+
 import Omkar from "../assets/leadership/Omkar.jpg";
 import Tejas from "../assets/Tejas.jpg";
 

@@ -1,4 +1,3 @@
-import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 import safety from "../assets/subteamPhotos/safety.png";
 import safety2 from "../assets/galleryPhotos/kickoff/IMG_4867.JPG";
 import safety3 from "../assets/galleryPhotos/kickoff/IMG_4861.JPG";

@@ -1,7 +1,6 @@
 import NavBox from "./NavBox";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import RoboticsLocation from "../assets/RoboticsLocation.png";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import image1 from "../assets/galleryPhotos/kickoff/IMG_4880.JPG";
 import image2 from "../assets/galleryPhotos/kickoff/IMG_4764.JPG";
 import image3 from "../assets/galleryPhotos/kickoff/IMG_4811.JPG";
@@ -130,13 +129,6 @@ function WhoWeAre() {
                   src={RoboticsLocation}
                   alt="location img"
                 />
-                // <div>
-                //   <GoogleMap
-                //     mapContainerStyle={containerStyle}
-                //     center={center}
-                //     zoom={10}
-                //   />
-                // </div>
               )
             }
             onMouseLeave={() => setNavBoxStuff(null)}

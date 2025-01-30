@@ -28,7 +28,7 @@ function WhatWeDo() {
           <li>Computer Assisted Design - designing our robot</li>{" "}
           <li>Electronics - wiring the robot</li>{" "}
           <li>Programming - coding the robot</li>
-          and many more.
+          <li>And many more!</li>
         </p>
         <div className="w-full h-auto flex justify-center">
           <a

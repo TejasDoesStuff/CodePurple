@@ -1,7 +1,6 @@
 import P24D4 from "../assets/galleryPhotos/districts-2024/P24D4.jpg";
 
 function AboutUs() {
-  
   return (
     <>
       <div className="relative h-[100vh] w-screen bg-black">

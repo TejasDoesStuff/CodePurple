@@ -30,7 +30,7 @@ export default {
         drive: "#649FF1",
         marketing: "#55D0F8",
         finance: "#56EFFD",
-        outreach: "#56F9D7",
+        strategy: "#57FEDA",
       },
     },
   },

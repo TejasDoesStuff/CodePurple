@@ -25,4 +25,4 @@ This repository contains the source code for the official website of FRC Team 58
 * Tailwind CSS 
 
 ### Contact
-* For any questions or inquiries, please use the contact page on the website (see Table of Contents) or email temp@email.com
+* For any questions or inquiries, please use the contact page on the website (see Table of Contents) or email frc5827@gmail.com

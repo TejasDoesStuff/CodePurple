@@ -1,4 +1,4 @@
-import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
+import Gordon from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 
 function LeadershipTitle() {
   return (
@@ -6,7 +6,7 @@ function LeadershipTitle() {
       <div className="relative h-screen w-full bg-black -z-10">
         <div
           className="absolute inset-0 bg-cover bg-center "
-          style={{ backgroundImage: `url(${temp})`, opacity: 0.2 }}
+          style={{ backgroundImage: `url(${Gordon})`, opacity: 0.2 }}
         ></div>
         <div className="relative w-full h-full flex flex-col items-center justify-center font-kode">
           <h1 className="text-white text-9xl text-center font-bold">

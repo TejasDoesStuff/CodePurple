@@ -1,15 +1,3 @@
-import Navbar from "./global-components/Navbar";
-import Footer from "./global-components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Unfinished from "./pages/Unfinished";
-import Subteams from "./pages/Subteams";
-import Contact from "./pages/Contact";
-import Freddy from "./pages/Freddy";
-import Leadership from "./pages/Leadership";
-import Sponsors from "./pages/Sponsors";
-import Contributors from "./pages/Contributors";
-
 import "./index.css"
 
 import {
@@ -17,6 +5,17 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
+
+import Navbar from "./global-components/Navbar";
+import Footer from "./global-components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Unfinished from "./pages/Unfinished";
+import Subteams from "./pages/Subteams";
+import Contact from "./pages/Contact";
+import Leadership from "./pages/Leadership";
+import Sponsors from "./pages/Sponsors";
+import Contributors from "./pages/Contributors";
 
 function App() {
     return (
@@ -32,7 +31,6 @@ function App() {
                 <Route path="/sponsors" element={<Sponsors />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/contributors" element={<Contributors />} />
-                <Route path="/freddy" element={<Freddy />} />
                 <Route path="*" element={<Unfinished />} />
             </Routes>
             <Footer />

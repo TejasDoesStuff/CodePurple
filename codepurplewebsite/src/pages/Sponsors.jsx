@@ -21,13 +21,10 @@ import Lego from "../assets/sponsors/Lego-logo.png";
 import LWHS from "../assets/sponsors/LWHS-logo.png";
 import Microsoft from "../assets/sponsors/Microsoft-logo.png";
 import Mod from "../assets/sponsors/Mod-logo.png";
-// import MotherDuck from "../assets/sponsors/MotherDuck-logo.png";
 import OSPI from "../assets/sponsors/OSPI-logo.png";
 import PACCAR from "../assets/sponsors/PACCAR-logo.png";
-// import Panera from "../assets/sponsors/Panera-logo.png";
 import Qualcomm from "../assets/sponsors/Qualcomm-logo.png";
 import TresHermanos from "../assets/sponsors/TresHermanos-logo.png";
-// import UW from "../assets/sponsors/UW-logo.png";
 
 const sponsors = [
   { name: "Microsoft", logo: Microsoft, url: "https://microsoft.com" },
@@ -57,9 +54,6 @@ const sponsors = [
     logo: LWHS,
     url: "https://lwhs.lwsd.org",
   },
-  // { name: 'Mother Duck', logo: MotherDuck, url: 'https://motherduck.com' },
-  // { name: 'UW', logo: UW, url: 'https://uw.edu' },
-  // { name: 'Panera', logo: Panera, url: 'https://panerabread.com' },
 ];
 
 function Sponsors() {

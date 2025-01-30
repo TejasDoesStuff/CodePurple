@@ -24,7 +24,6 @@ function Contact() {
           <h2 className="text-3xl text-codePurple font-bold mb-6 flex flex-col items-center">
             Get in Touch{" "}
             <div className="w-64 h-auto bg-white flex justify-around items-center pt-6 gap-2">
-              {/* Tiktok, Youtube, Blue Alliance, -> Link tree */}
               <a
                 href="https://instagram.com/codepurple5827"
                 target="_blank"
@@ -191,7 +190,7 @@ function Contact() {
                   const name = document.getElementById("name").value;
                   const email = document.getElementById("email").value;
                   const message = document.getElementById("message").value;
-                  const mailtoLink = `mailto:tejaspanja@gmail.com?subject=Contact%20Form%20from%20${encodeURIComponent(
+                  const mailtoLink = `mailto:fr5827@gmail.com?subject=Contact%20Form%20from%20${encodeURIComponent(
                     name
                   )}&body=Name:%20${encodeURIComponent(
                     name

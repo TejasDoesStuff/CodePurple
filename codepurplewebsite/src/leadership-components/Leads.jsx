@@ -15,15 +15,15 @@ function Leads() {
         <div className="w-full h-auto bg-white flex items-center flex-col">
             <h1 className="text-7xl font-kode font-bold my-6 text-codePurple">Leads</h1>
             <div className="w-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid px-8 pb-8 max-w-[5000px]">
-                <PersonCard image={Matthew} name={"Matthew Warmington"} title={"Electronics Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Aimal} name={"Aimal Samir"} title={"Build Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Logan} name={"Logan Schmidt"} title={"Design Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Omkar} name={<a href="/freddy">Omkar Page</a>} title={"Code Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Jayden} name={"Jayden Hong"} title={"Code Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Rohan} name={"Rohan Chilukuri"} title={"Finance Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Emi} name={"Emi Elman"} title={"Marketing Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Jerry} name={"Jerry Guo"} title={"Drive Lead"} description={""} variant="codePurple" text="white"/>
-                <PersonCard image={Naythan} name={"Naythan Saldanha"} title={"Scouting Lead"} description={""} variant="codePurple" text="white"/>
+                <PersonCard image={Matthew} name={"Matthew Warmington"} title={"Electronics Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Aimal} name={"Aimal Samir"} title={"Build Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Logan} name={"Logan Schmidt"} title={"Design Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Omkar} name={"Omkar Page"} title={"Code Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Jayden} name={"Jayden Hong"} title={"Code Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Rohan} name={"Rohan Chilukuri"} title={"Finance Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Emi} name={"Emi Elman"} title={"Marketing Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Jerry} name={"Jerry Guo"} title={"Drive Lead"} description={""} variant="codePurple" text="white" />
+                <PersonCard image={Naythan} name={"Naythan Saldanha"} title={"Scouting Lead"} description={""} variant="codePurple" text="white" />
             </div>
         </div>
     );

@@ -20,13 +20,10 @@ import Lego from "../assets/sponsors/Lego-logo.png";
 import LWHS from "../assets/sponsors/LWHS-logo.png";
 import Microsoft from "../assets/sponsors/Microsoft-logo.png";
 import Mod from "../assets/sponsors/Mod-logo.png";
-import MotherDuck from "../assets/sponsors/MotherDuck-logo.png";
 import OSPI from "../assets/sponsors/OSPI-logo.png";
 import PACCAR from "../assets/sponsors/PACCAR-logo.png";
-import Panera from "../assets/sponsors/Panera-logo.png";
 import Qualcomm from "../assets/sponsors/Qualcomm-logo.png";
 import TresHermanos from "../assets/sponsors/TresHermanos-logo.png";
-import UW from "../assets/sponsors/UW-logo.png";
 
 function SponsorMarquee() {
   return (
@@ -52,7 +49,6 @@ function SponsorMarquee() {
             <img src={OSPI} alt="OSPI" className="object-contain" />
           </div>
         </Tilt>
-
         <Tilt options={defaultOptions}>
           <div
             onClick={() => window.open("https://boeing.com")}
@@ -61,7 +57,6 @@ function SponsorMarquee() {
             <img src={Boeing} alt="Boeing" className="object-contain" />
           </div>
         </Tilt>
-
         <Tilt options={defaultOptions}>
           <div
             onClick={() => window.open("https://firstwa.org/")}
@@ -74,7 +69,6 @@ function SponsorMarquee() {
             />
           </div>
         </Tilt>
-
         <Tilt options={defaultOptions}>
           <div
             onClick={() => window.open("https://modpizza.com")}
@@ -93,7 +87,6 @@ function SponsorMarquee() {
             <img src={PACCAR} alt="Paccar" className="object-contain" />
           </div>
         </Tilt>
-
         <Tilt options={defaultOptions}>
           <div
             onClick={() => window.open("https://qualcomm.com")}
@@ -102,7 +95,6 @@ function SponsorMarquee() {
             <img src={Qualcomm} alt="Qualcomm" className="object-contain" />
           </div>
         </Tilt>
-
         <Tilt options={defaultOptions}>
           <div
             onClick={() =>
@@ -119,7 +111,6 @@ function SponsorMarquee() {
             />
           </div>
         </Tilt>
-        
         <Tilt options={defaultOptions}>
           <div
             onClick={() => window.open("https://chipotle.com")}
@@ -146,7 +137,6 @@ function SponsorMarquee() {
             />
           </div>
         </Tilt>
-
         <Tilt options={defaultOptions}>
           <div
             onClick={() => window.open("https://lwhs.lwsd.org")}
@@ -154,7 +144,7 @@ function SponsorMarquee() {
           >
             <img
               src={LWHS}
-              alt="Lake Washingotn High School"
+              alt="Lake Washington High School"
               className="object-contain"
             />
           </div>

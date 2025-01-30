@@ -3,7 +3,7 @@ function Wave() {
     <div className="h-auto w-screen mt-[-40vh] z-10">
       <svg
         id="wave"
-        style={{ transform:"rotate(0deg)", transition: "0.3s"}}
+        style={{ transform: "rotate(0deg)", transition: "0.3s" }}
         viewBox="0 0 1440 490"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"

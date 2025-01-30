@@ -1,5 +1,6 @@
-import P24D7 from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 import Marquee from "react-fast-marquee";
+
+import P24D7 from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
 
 function AboutLeadership() {
   const scrollText = () => {

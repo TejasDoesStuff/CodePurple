@@ -51,7 +51,7 @@ function WhoWeAre() {
                 Lake Washington High School
               </a>
             </span>
-            , but includes many eager parents and mentors, and volunteers
+            , but includes many eager parents, mentors, and volunteers
             equally as interested in robotics.
           </p>
           <p className="px-10 py-2 text-left">

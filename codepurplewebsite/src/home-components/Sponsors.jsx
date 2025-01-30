@@ -1,6 +1,4 @@
-// import Sponsor from './Sponsor';
 import SponsorMarquee from './SponsorMarquee';
-//{ sponsors = [] }
 function Sponsors() {
   return (
     <div className="h-auto w-full bg-codePurple">
@@ -14,11 +12,6 @@ function Sponsors() {
         <div className="m-10">
           <SponsorMarquee />
         </div>
-        {/* <div className="flex flex-wrap m-10">
-          {sponsors.map((sponsor, index) => (
-            <Sponsor key={index} image={sponsor.image} url={sponsor.url} />
-          ))}
-        </div> */}
       </div>
     </div>
   );

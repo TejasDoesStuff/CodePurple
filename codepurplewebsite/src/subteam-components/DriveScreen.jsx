@@ -1,8 +1,3 @@
-import temp from "../assets/galleryPhotos/districts-2024/P24D7.jpg";
-import drive from "../assets/subteamPhotos/electronics.png";
-import drive1 from "../assets/subteamPhotos/electronics2.png";
-
-
 function DriveScreen() {
   return (
     <div className="w-full h-full bg-drive flex flex-row items-center justify-center">
@@ -20,15 +15,6 @@ function DriveScreen() {
           <h1 className="text-3xl font-kode text-left mx-5">Jerry Guo, Natalya Leahy (Driver)</h1>
         </div>
       </div>
-      {/* <div className="w-1/2 h-full text-white flex flex-col items-center justify-center">
-        <div className="w-full h-1/2">
-          <img src={temp} alt="Large" className="w-full h-full object-cover border-t-0 border-r-0 border-white border-4" />
-        </div>
-        <div className="w-full h-1/2 flex">
-          <img src={temp} alt="Small 1" className="w-1/2 h-full object-cover border-l-4 border-white" />
-          <img src={temp} alt="Small 2" className="w-1/2 h-full object-cover border-l-4 border-white" />
-        </div>
-      </div> */}
     </div>
   );
 }

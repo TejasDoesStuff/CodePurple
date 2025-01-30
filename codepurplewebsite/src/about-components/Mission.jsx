@@ -17,7 +17,7 @@ function Mission() {
                     </div>
                 </div>
             </div>
-      </div>
+        </div>
     )
 }
 
