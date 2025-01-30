@@ -6,12 +6,12 @@
 #### Welcome to the repository for the official website of FRC team 5827 - Code Purple
 
 ## Table of Contents
-* <a href="#>Home</a>
-* <a href="#>About Us</a>
-* <a href="#>Subteams</a>
-* <a href="#>Leadership</a>
-* <a href="#>Contact</a>
-* <a href="#>Contributors</a>
+<a href="#>Home</a>
+<a href="#>About Us</a>
+<a href="#>Subteams</a>
+<a href="#>Leadership</a>
+<a href="#>Contact</a>
+<a href="#>Contributors</a>
 
 ### Introduction
 This repository contains the source code for the official website of FRC Team 5827, Code Purple. The website provides information about our team, our subteams, our missions, and our leadership.
