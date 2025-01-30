@@ -2,7 +2,11 @@ import React from "react";
 import { FaInstagram, FaTiktok, FaEnvelope, FaYoutube } from "react-icons/fa";
 
 const waveText = "Contact".split("").map((char, index) => (
-  <span key={index} style={{ animationDelay: `${index * 0.1}s` }} className="wave">
+  <span
+    key={index}
+    style={{ animationDelay: `${index * 0.1}s` }}
+    className="wave"
+  >
     {char}
   </span>
 ));
@@ -11,13 +15,13 @@ function Contact() {
   return (
     <div className="w-screen h-screen flex flex-col overflow-x-hidden my-8">
       <div className="w-full h-80 bg-white items-center justify-center flex pt-16 overflow-hidden">
-        <h1 className="text-9xl font-kode text-center font-bold gradient-scroll">
+        <h1 className="text-9xl font-kode text-center font-bold text-codePurple">
           Contact
         </h1>
       </div>
       <div className="w-full h-auto bg-white flex justify-center items-center">
         <form className="w-full p-4 shadow-md">
-          <h2 className="text-4xl text-codePurple font-bold mb-6 flex flex-col items-center py-2">
+          <h2 className="text-3xl text-codePurple font-bold mb-6 flex flex-col items-center">
             Get in Touch{" "}
             <div className="w-64 h-auto bg-white flex justify-around items-center pt-6 gap-2">
               {/* Tiktok, Youtube, Blue Alliance, -> Link tree */}
@@ -134,7 +138,6 @@ function Contact() {
               </a>
             </div>
           </h2>
-
           <div className="w-full flex flex-col items-center">
             <div className="w-1/2">
               <label
@@ -148,7 +151,7 @@ function Contact() {
                 id="name"
                 name="name"
                 className="rounded-lg w-full p-2 mb-4 border-2 border-codePurple text-black"
-                placeholder="John Doe"
+                placeholder="Code Purple"
                 required
               />
 
@@ -183,7 +186,20 @@ function Contact() {
               ></textarea>
 
               <button
-                type="submit"
+                type="button"
+                onClick={() => {
+                  const name = document.getElementById("name").value;
+                  const email = document.getElementById("email").value;
+                  const message = document.getElementById("message").value;
+                  const mailtoLink = `mailto:tejaspanja@gmail.com?subject=Contact%20Form%20from%20${encodeURIComponent(
+                    name
+                  )}&body=Name:%20${encodeURIComponent(
+                    name
+                  )}%0AEmail:%20${encodeURIComponent(
+                    email
+                  )}%0A%0A${encodeURIComponent(message)}`;
+                  window.location.href = mailtoLink;
+                }}
                 className="bg-codePurple text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition w-full"
               >
                 Send Message

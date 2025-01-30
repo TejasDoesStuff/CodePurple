@@ -1,7 +1,7 @@
 import PersonCard from "./PersonCard";
 
 import Matthew from "../assets/leadership/Matthew.jpg";
-import Aimal from "../assets/leadership/Aimal.jpg";
+import Aimal from "../assets/leadership/Aimal.png";
 import Logan from "../assets/leadership/Logan.jpg";
 import Omkar from "../assets/leadership/Omkar.jpg";
 import Jayden from "../assets/leadership/Jayden.jpg";
